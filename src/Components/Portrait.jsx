@@ -71,7 +71,7 @@ const Portrait = (isMobile) => {
           }}
         >
           <img
-            src="\src\assets\images\Portrait.jpg"
+            src="/assets/images/Portrait.jpg"
             style={{
               width: "200px",
               height: "auto",
@@ -81,7 +81,7 @@ const Portrait = (isMobile) => {
           <div style={{ padding: "0px 10px" }}>
             <div className="portraitLink">
               <img
-                src="../assets/icons/Agent.ico"
+                src="/assets/icons/Agent.ico"
                 alt=""
                 className="portraitIcon"
               />
@@ -89,7 +89,7 @@ const Portrait = (isMobile) => {
             </div>
             <div className="portraitLink">
               <img
-                src="../assets/icons/Mailbox.ico"
+                src="/assets/icons/Mailbox.ico"
                 alt=""
                 className="portraitIcon"
               />
@@ -99,7 +99,7 @@ const Portrait = (isMobile) => {
             </div>
             <div className="portraitLink">
               <img
-                src="../assets/icons/Phone.ico"
+                src="/assets/icons/Phone.ico"
                 alt=""
                 className="portraitIcon"
               />
