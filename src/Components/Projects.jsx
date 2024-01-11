@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Draggable from "react-draggable";
-import { GroupBox, Window, WindowContent, WindowHeader } from "react95";
+import { Window, WindowContent, WindowHeader } from "react95";
 import useZIndex from "../Hooks/setZIndex";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
-const Education = (isMobile) => {
+
+const Projects = (isMobile) => {
   const [zIndex, handleClick] = useZIndex();
   const { height, width } = useWindowDimensions();
   const componentRef = useRef();
@@ -21,8 +22,8 @@ const Education = (isMobile) => {
       });
       setPosition(
         isMobile.isMobile
-          ? { x: width * 0.15, y: 1500 }
-          : { x: width * 0.74, y: height * 0.68 }
+          ? { x: width * 0.03, y: 1350 }
+          : { x: width * 0.7, y: height * 0.5 }
       );
     }
   }, []);
@@ -39,7 +40,6 @@ const Education = (isMobile) => {
         left: 0,
         top: 0,
         right: width - dimensions.width,
-        // bottom: height - dimensions.height - 50,
       }}
     >
       <Window
@@ -48,19 +48,11 @@ const Education = (isMobile) => {
         style={{ position: "absolute", zIndex }}
         ref={componentRef}
       >
-        <WindowHeader className="handle">Education.exe</WindowHeader>
-        <WindowContent>
-          <GroupBox label="Concordia">
-            Diploma in Full-Stack Development
-          </GroupBox>
-          <br />
-          <GroupBox label="John Abbott College">
-            DEC in Computer Science
-          </GroupBox>
-        </WindowContent>
+        <WindowHeader className="handle">Projects</WindowHeader>
+        <WindowContent>Coming soon...</WindowContent>
       </Window>
     </Draggable>
   );
 };
 
-export default Education;
+export default Projects;

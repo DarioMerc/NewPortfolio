@@ -5,6 +5,7 @@ import Header from "./Header";
 import Popup from "./Popup";
 import "./Portfolio.css";
 import Portrait from "./Portrait";
+import Projects from "./Projects";
 import Summary from "./Summary";
 const Portfolio = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -49,6 +50,7 @@ const Portfolio = () => {
       <Experience isMobile={isMobile} />
       <Portrait isMobile={isMobile} />
       <Summary isMobile={isMobile} />
+      <Projects isMobile={isMobile} />
       <Education isMobile={isMobile} />
     </div>
   );

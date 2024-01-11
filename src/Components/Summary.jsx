@@ -82,7 +82,7 @@ const Summary = (isMobile) => {
           <p>
             An enthusiastic full-stack developer looking for a new role! I am
             looking for a company that I can grow with as both a developer and a
-            person. I value organization learning the best practices since they
+            person. I value organization and learning best practices since they
             are always changing! Outside of my career I have strong passions in
             both music and movies and I pride myself on being an easygoing and
             upbeat person.
