@@ -71,7 +71,7 @@ const Portrait = (isMobile) => {
           }}
         >
           <img
-            src="src\assets\images\Portrait.jpg"
+            src="\src\assets\images\Portrait.jpg"
             style={{
               width: "200px",
               height: "auto",
