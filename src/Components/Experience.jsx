@@ -3,7 +3,7 @@ import Draggable from "react-draggable";
 import { GroupBox, Window, WindowContent, WindowHeader } from "react95";
 import useZIndex from "../Hooks/setZIndex";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
-import "./Experience.css";
+
 const Experience = (isMobile) => {
   const [zIndex, handleClick] = useZIndex();
   const { height, width } = useWindowDimensions();

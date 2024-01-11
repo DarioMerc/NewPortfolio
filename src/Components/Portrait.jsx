@@ -3,10 +3,10 @@ import Draggable from "react-draggable";
 import { Anchor, Window, WindowContent, WindowHeader } from "react95";
 import useZIndex from "../Hooks/setZIndex";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
+
 const Portrait = (isMobile) => {
   const [zIndex, handleClick] = useZIndex();
   const { height, width } = useWindowDimensions();
-  console.log(height, width);
   const componentRef = useRef();
   const [dimensions, setDimensions] = useState({
     width: 0,
@@ -24,7 +24,7 @@ const Portrait = (isMobile) => {
         isMobile.isMobile
           ? { x: width * 0.25, y: height * 0.01 }
           : {
-              x: width * 0.725,
+              x: width * 0.76,
               y: height * 0.01,
             }
       );
@@ -81,7 +81,7 @@ const Portrait = (isMobile) => {
           <div style={{ padding: "0px 10px" }}>
             <div className="portraitLink">
               <img
-                src="src/assets/icons/Agent.ico"
+                src="../assets/icons/Agent.ico"
                 alt=""
                 className="portraitIcon"
               />
@@ -89,7 +89,7 @@ const Portrait = (isMobile) => {
             </div>
             <div className="portraitLink">
               <img
-                src="src/assets/icons/Mailbox.ico"
+                src="../assets/icons/Mailbox.ico"
                 alt=""
                 className="portraitIcon"
               />
@@ -99,7 +99,7 @@ const Portrait = (isMobile) => {
             </div>
             <div className="portraitLink">
               <img
-                src="src/assets/icons/Phone.ico"
+                src="../assets/icons/Phone.ico"
                 alt=""
                 className="portraitIcon"
               />

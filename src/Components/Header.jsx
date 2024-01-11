@@ -51,7 +51,7 @@ const Header = () => {
                 <MenuListItem>
                   <div className="menuLink">
                     <img
-                      src="src/assets/icons/Gray_briefcase.ico"
+                      src="../assets/icons/Gray_briefcase.ico"
                       alt=""
                       className="menuIcon"
                     />
@@ -64,7 +64,7 @@ const Header = () => {
                 <MenuListItem>
                   <div className="menuLink">
                     <img
-                      src="src/assets/icons/Mail.ico"
+                      src="../assets/icons/Mail.ico"
                       alt=""
                       className="menuIcon"
                     />
@@ -74,7 +74,7 @@ const Header = () => {
                 <MenuListItem>
                   <div className="menuLink">
                     <img
-                      src="src/assets/icons/Starfield.ico"
+                      src="../assets/icons/Starfield.ico"
                       alt=""
                       className="menuIcon"
                     />
@@ -84,12 +84,12 @@ const Header = () => {
                 <MenuListItem>
                   <div className="menuLink">
                     <img
-                      src="src/assets/icons/Resume.ico"
+                      src="../assets/icons/Resume.ico"
                       alt=""
                       className="menuIcon"
                     ></img>
                     <a
-                      href="src/assets/resume.pdf"
+                      href="../assets/resume.pdf"
                       download="Dario Mercuri CV.pdf"
                     >
                       Resume

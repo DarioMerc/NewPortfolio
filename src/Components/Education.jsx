@@ -22,7 +22,7 @@ const Education = (isMobile) => {
       setPosition(
         isMobile.isMobile
           ? { x: width * 0.15, y: 1500 }
-          : { x: width * 0.74, y: height * 0.68 }
+          : { x: width * 0.74, y: height * 0.84 }
       );
     }
   }, []);

@@ -1,6 +1,1 @@
-- media querys for window sizes (ie: education is 400px for desktop, 300px for mobile?)
-- how to place windows, depending on desktip or mobile, possibly randomly generated(defaultsize(x:0,y:0))
-
-send an isMobile into Experience so that the job headers are simplified if mobile
-Desktop: Job ---- Place ---- Date
-Mobile: Job at Place - Date
+sticky header

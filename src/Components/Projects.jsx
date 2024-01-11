@@ -23,7 +23,7 @@ const Projects = (isMobile) => {
       setPosition(
         isMobile.isMobile
           ? { x: width * 0.03, y: 1350 }
-          : { x: width * 0.7, y: height * 0.5 }
+          : { x: width * 0.73, y: height * 0.65 }
       );
     }
   }, []);
