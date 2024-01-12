@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Draggable from "react-draggable";
-import { Window, WindowContent, WindowHeader } from "react95";
+import { Anchor, Window, WindowContent, WindowHeader } from "react95";
 import useZIndex from "../Hooks/setZIndex";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 
@@ -23,7 +23,7 @@ const Projects = (isMobile) => {
       setPosition(
         isMobile.isMobile
           ? { x: width * 0.03, y: 1350 }
-          : { x: width * 0.73, y: height * 0.65 }
+          : { x: width * 0.73, y: height * 0.6 }
       );
     }
   }, []);
@@ -49,7 +49,26 @@ const Projects = (isMobile) => {
         ref={componentRef}
       >
         <WindowHeader className="handle">Projects</WindowHeader>
-        <WindowContent>Coming soon...</WindowContent>
+        <WindowContent>
+          <a href="https://github.com/DarioMerc/MangoMarket">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                padding: "5px",
+              }}
+              className="project"
+            >
+              <img
+                src="/assets/icons/WelcomeProgram.ico"
+                alt=""
+                style={{ width: "50px" }}
+              />
+              <Anchor style={{ fontSize: "14px" }}>Mango Market</Anchor>
+            </div>
+          </a>
+        </WindowContent>
       </Window>
     </Draggable>
   );

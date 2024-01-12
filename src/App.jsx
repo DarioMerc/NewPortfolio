@@ -1,14 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-import {
-  styleReset,
-  Toolbar,
-  Window,
-  WindowContent,
-  WindowHeader,
-  AppBar,
-  Button,
-} from "react95";
+import { styleReset } from "react95";
 // pick a theme of your choice
 import original from "react95/dist/themes/original";
 // original Windows95 font (optionally)
@@ -21,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'ms_sans_serif';
     src: url('${ms_sans_serif}') format('woff2');
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal
   }
   @font-face {
@@ -32,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: 'ms_sans_serif';
+    letter-spacing: .5px;
   }
 `;
 

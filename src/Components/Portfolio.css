@@ -46,3 +46,13 @@
   margin-bottom: 0.5px;
   margin: 0px 10px;
 }
+
+.project {
+  border: 1px solid transparent;
+  transition: box-shadow 0.3s, background-color 0.3s, border 0.3s;
+}
+.project:hover {
+  border: 1px dotted #0000ff; /* Blue border on hover */
+  background-color: #a0a0a0;
+  box-shadow: 2px 2px 5px #888888;
+}

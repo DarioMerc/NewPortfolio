@@ -50,8 +50,8 @@ const Portfolio = () => {
       <Experience isMobile={isMobile} />
       <Portrait isMobile={isMobile} />
       <Summary isMobile={isMobile} />
-      <Projects isMobile={isMobile} />
       <Education isMobile={isMobile} />
+      <Projects isMobile={isMobile} />
     </div>
   );
 };
